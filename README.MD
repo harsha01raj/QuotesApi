@@ -1,7 +1,10 @@
 📖 Quote API
 
 A RESTful API that returns random inspirational quotes.
-Includes IP-based rate limiting, logging, and Swagger documentation.
+Includes IP-based rate limiting, logging, Swagger documentation, per-endpoint rate configuration, and unit tests.
+
+ Live Demo on Render:
+👉 https://quotesapi-0bxl.onrender.com/
 
 🚀 Features
 
