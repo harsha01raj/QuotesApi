@@ -4,7 +4,9 @@ const swaggerUi = require("swagger-ui-express");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to Quotes API 🎉" });
+});
 
 // Quotes data
 const quotes = [
@@ -98,6 +100,7 @@ app.get("/api/quote", rateLimiter, (req, res) => {
   const randomQuote = quotes[randomIndex];
   res.json({ quote: randomQuote });
 });
+
 
 // Start server
 app.listen(PORT, () => {
